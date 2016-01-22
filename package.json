@@ -32,6 +32,7 @@
     "prebuild": "mkdir -p dist",
     "build": "npm run lint && babel src/index.js -o dist/index.js",
     "lint": "eslint src/index.js",
+    "build:example": "eslint example/src/main.js && browserify example/src/main.js > example/main.js",
     "example": "budo example/src/main.js --live --dir example --open"
   },
   "browserify": {
