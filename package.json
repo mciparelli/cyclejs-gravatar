@@ -1,0 +1,42 @@
+{
+  "name": "cyclejs-gravatar",
+  "version": "1.0.0",
+  "description": "cyclejs component for rendering a gravatar profile image",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "keywords": [
+    "cyclejs",
+    "gravatar"
+  ],
+  "author": "mciparelli@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@cycle/core": "6.0.0-rc2",
+    "@cycle/dom": "^9.0.1",
+    "@cycle/isolate": "^1.2.0",
+    "md5": "^2.0.0",
+    "querystring": "^0.2.0",
+    "rx": "^4.0.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "budo": "^8.0.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "mkdir -p dist",
+    "build": "npm run lint && babel src/index.js -o dist/index.js",
+    "lint": "eslint src/index.js",
+    "example": "budo example/src/main.js --live --dir example --open"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
