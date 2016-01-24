@@ -38,5 +38,16 @@
     "transform": [
       "babelify"
     ]
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mciparelli/cyclejs-gravatar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mciparelli/cyclejs-gravatar/issues"
+  },
+  "homepage": "https://github.com/mciparelli/cyclejs-gravatar#readme"
 }
